@@ -1,0 +1,41 @@
+# Custom Dictionary with Hash Map
+
+## Overview
+
+This project implements a custom dictionary using a hash map to provide
+ efficient data storage and retrieval. The dictionary supports standard
+  operations such as insertion, deletion, and search, optimized to handle
+   key-value pairs with high performance and low collision rates.
+
+## Features
+
+- **Efficient Storage**: Uses a hash map for fast access to data.
+- **Collision Handling**: Implements techniques to manage hash collisions.
+- **Flexible Key Types**: Supports various data types as keys.
+- **Scalability**: Designed to handle large datasets.
+
+## Files and Structure
+
+- **Dictionary.cpp & Dictionary.hpp**: Core implementation of the dictionary functions.
+- **HashMap.cpp & HashMap.hpp**: Implementation details of the hash map,
+ including hash functions and collision resolution strategies.
+- **HashMapbez.hpp**: Contains additional utility functions for the hash map.
+- **Helpers.h**: Helper functions and utilities used across the project.
+- **presubmit.cpp & Presubmit.hpp**: Pre-submission checks and validation scripts.
+- **test_ex6.cpp**: Contains test cases for verifying the implementation.
+- **tests_ex6_suchetzky.cpp**: Additional test cases for comprehensive validation.
+
+## Getting Started
+
+### Prerequisites
+
+- **Compiler**: A C++ compiler (e.g., g++, clang++).
+- **Build Tools**: Make or other build automation tools.
+
+### Compilation
+
+To compile the project, use the provided Makefile or manually compile the
+ files using the following command:
+
+```bash
+g++ -o dictionary Dictionary.cpp HashMap.cpp presubmit.cpp test_ex6.cpp -std=c++11
